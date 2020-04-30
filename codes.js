@@ -54,6 +54,9 @@ function createPokemonCard(pokemon) {
 		const numero = pokemon.feed.entry[id].gsx$nopokedex.$t;
 		const catcher = pokemon.feed.entry[id].gsx$catchers.$t
 
+		const catcher1 = catcher.split(' ')[0];
+		const catcher2 = catcher.split(' ')[1];
+
 		
 		pokemonEl.style.backgroundColor = color;
 
@@ -70,7 +73,7 @@ function createPokemonCard(pokemon) {
 	    `;
 
 	 	const capturado = `
-	 	    <h3 class="cath">${catcher}</h3>
+	 		<h3 class="cath">${catcher}</h3> 	    
 	        <div class="img-container">
 	            <img src="https://img.pokemondb.net/sprites/home/shiny/${nombre}.png" alt="${name}" />
 	        </div>
@@ -89,7 +92,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="nameform">${name.split(' ')[0]}</h3>
+	            <h4 class="region">${name.split(' ')[1]}</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -102,7 +106,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="region">${name.split(' ')[1]}</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -154,7 +159,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">${name.split(' ')[1]}</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -167,7 +173,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Hembra</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -180,7 +187,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Macho</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -193,7 +201,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Hembra</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -219,7 +228,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Mr.Mime</h3>
+	            <h4 class="form">Galar</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -258,7 +268,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Darmanitan</h3>
+	            <h4 class="form">Galar</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -284,7 +295,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Farfetch'd</h3>
+	            <h4 class="form">Galar</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -297,7 +309,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Wormadam</h3>
+	            <h4 class="form">Planta</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -310,7 +323,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Wormadam</h3>
+	            <h4 class="form">Basura</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -323,7 +337,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Wormadam</h3>
+	            <h4 class="form">Arena</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -336,7 +351,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Shellos</h3>
+	            <h4 class="form">Este</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -349,7 +365,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Shellos</h3>
+	            <h4 class="form">Oeste</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -362,7 +379,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Gastrodon</h3>
+	            <h4 class="form">Este</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -375,7 +393,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Gastrodon</h3>
+	            <h4 class="form">Oeste</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -388,7 +407,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Basculin</h3>
+	            <h4 class="form">Raya Roja</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -401,7 +421,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Basculin</h3>
+	            <h4 class="form">Raya Azul</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -414,7 +435,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Invierno</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -427,7 +449,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Verano</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -440,7 +463,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Otoño</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -453,7 +477,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Primavera</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -466,7 +491,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Rojo</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -479,7 +505,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Azul</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -491,7 +518,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Naranja</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -503,7 +531,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Blanco</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -515,7 +544,22 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Amarillo</h4>
+	            <small class="type"><span>${type1}</span></small>
+	        </div>
+	    `;
+
+	    const floette_eternal = `
+	    <h3 class="cath">${catcher}</h3>
+	        <div class="img-container">
+	            <img src="https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/shiny/floette-eternal.png" alt="${name}" />
+	        </div>
+	        <div class="info">
+	            <span class="number">#${numero.toString()
+							.padStart(3, '0')}</span>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Flor Eterna</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -528,7 +572,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Mini</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -541,7 +586,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Mediano</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -554,7 +600,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Grande</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -567,7 +614,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Gigante</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -580,7 +628,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Diurno</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -593,7 +642,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Nocturno</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -606,7 +656,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Ocaso</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -632,7 +683,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Alcremie</h3>
+	            <h4 class="form">Fresa</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -645,7 +697,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Alcremie</h3>
+	            <h4 class="form">Corazon</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -658,7 +711,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Alcremie</h3>
+	            <h4 class="form">Flor</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -671,7 +725,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Alcremie</h3>
+	            <h4 class="form">Estrella</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -684,7 +739,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Alcremie</h3>
+	            <h4 class="form">Trebol</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -697,7 +753,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Alcremie</h3>
+	            <h4 class="form">Fruto</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -710,7 +767,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">Alcremie</h3>
+	            <h4 class="form">Lazo</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -723,7 +781,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Grave</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -736,7 +795,8 @@ function createPokemonCard(pokemon) {
 	        <div class="info">
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
-	            <h3 class="name">${name}</h3>
+	            <h3 class="name">${name.split(' ')[0]}</h3>
+	            <h4 class="form">Agudo</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -994,7 +1054,7 @@ function createPokemonCard(pokemon) {
 
 
 
-//status == 'capturado' || status == 'ShinyLock'
+//status == 'Capturado' || status == 'ShinyLock'
 if (status == 'Capturado' || status == 'ShinyLock')
 {
 
@@ -1040,7 +1100,7 @@ if (status == 'Capturado' || status == 'ShinyLock')
 
  	 }
 
- 	else if (nombre.includes('macho') || nombre.includes('original'))
+ 	else if (nombre.includes(' macho') || nombre.includes('original'))
 	 {
 	 	if (nombre.includes('nidoran'))
 	 	{
@@ -1163,6 +1223,9 @@ if (status == 'Capturado' || status == 'ShinyLock')
 	 	else if(nombre.includes('amarillo')){
 	 		pokemonEl.innerHTML = flabebe_yellow;
 	 	}
+	 	else if(nombre.includes('eterna')){
+	 		pokemonEl.innerHTML = floette_eternal;
+	 	}
 
  	 }
  	 else if (nombre.includes('pumpkaboo') || nombre.includes('gourgeist'))
@@ -1229,7 +1292,7 @@ if (status == 'Capturado' || status == 'ShinyLock')
 	 	}
 	 	else if(nombre.includes('lazo')){
 
-	 		pokemonEl.innerHTML = alcremie_flor;
+	 		pokemonEl.innerHTML = alcremie_lazo;
 	 	}
 
  	 }
@@ -1244,7 +1307,7 @@ if (status == 'Capturado' || status == 'ShinyLock')
 	 	
  	 }
 
- 	 else if (nombre.includes('vivillon'))
+ 	 else if (nombre.includes('vivill'))
 	 {
 
 	 	if(nombre.includes('floral')){
@@ -1320,7 +1383,7 @@ if (status == 'Capturado' || status == 'ShinyLock')
 	 	}
 	 	else if(nombre.includes('ball')){
 
-	 		pokemonEl.innerHTML = vivillon_fantas;
+	 		pokemonEl.innerHTML = vivillon_poke;
 	 	}
 
 
