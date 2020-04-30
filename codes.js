@@ -61,6 +61,7 @@ function createPokemonCard(pokemon) {
 		pokemonEl.style.backgroundColor = color;
 
 		const libre = `
+		<h3 class="cath" style="visibility: hidden;">libre</h3>
 	        <div class="img-container">
 	            <img src="https://projectpokemon.org/home/uploads/monthly_2017_07/missingno.png.4bc4f1920385390a41f267dd8f15b2ed.png" alt="${name}" />
 	        </div>
