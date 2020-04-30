@@ -22,13 +22,13 @@ body {
 	width: all;
 }
 
+h1 {
+	letter-spacing: 3px;
+}
+
 .logo {
 	height: 600px;
 	width: 1500px;
-}
-
-h1 {
-	letter-spacing: 3px;
 }
 
 .menu{
