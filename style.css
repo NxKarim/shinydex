@@ -38,6 +38,8 @@ h1 {
 	margin: 10px;
 	padding: 20px;
 	text-align: center;
+	width: 160px;
+	height: 341px;
 }
 
 .pokemon .img-container {
@@ -80,3 +82,19 @@ h1 {
 	font-size: 0.8em;
 	padding: 5px 10px;
 }
+
+.pokemon .region {
+	margin: 1px 0 7px;
+	letter-spacing: 1px;
+}
+
+.pokemon .nameform {
+	margin: 15px 0 1px;
+	letter-spacing: 1px;
+}
+
+.pokemon .cath{
+	size: auto;
+}
+
+
