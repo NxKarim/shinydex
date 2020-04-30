@@ -158,7 +158,7 @@ h1 {
 }
 
 .social-panel {	
-	background-image: url(pokeball.png);
+	background-color: white;
 	border-radius: 16px;
 	box-shadow: 0 16px 31px -17px rgba(0,31,97,0.6);
 	border: 5px solid #cb3234;
