@@ -6,9 +6,8 @@
 }
 
 body {
-	background: #EFEFBB;
-	background: -webkit-linear-gradient(to right, #d93a16, #E36A0D);
-	background: linear-gradient(to right, #d93a16, #E36A0D);
+	background: url(https://www.ecopetit.cat/wpic/mpic/127-1278710_freetoedit-rainbow-rainbowbackground-freetoedit-pastel-rainbow.jpg) no-repeat center center fixed;
+    	background-size: cover;
 
 	display: flex;
 	flex-direction: column;
