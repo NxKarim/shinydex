@@ -61,7 +61,9 @@ function createPokemonCard(pokemon) {
 		pokemonEl.style.backgroundColor = color;
 
 		const libre = `
-		<h3 class="cath" style="visibility: hidden;">libre</h3>
+			<h3 class="cath" style="visibility: hidden;">libre</h3> 
+			<div id=${numero}>   
+	        </div>	
 	        <div class="img-container">
 	            <img src="https://projectpokemon.org/home/uploads/monthly_2017_07/missingno.png.4bc4f1920385390a41f267dd8f15b2ed.png" alt="${name}" />
 	        </div>
@@ -74,7 +76,9 @@ function createPokemonCard(pokemon) {
 	    `;
 
 	 	const capturado = `
-	 		<h3 class="cath">${catcher}</h3> 	    
+	 		<h3 class="cath">${catcher}</h3> 
+	 		<div id=${numero}>   
+	        </div>	    
 	        <div class="img-container">
 	            <img src="https://img.pokemondb.net/sprites/home/shiny/${nombre}.png" alt="${name}" />
 	        </div>
@@ -94,7 +98,7 @@ function createPokemonCard(pokemon) {
 	            <span class="number">#${numero.toString()
 							.padStart(3, '0')}</span>
 	            <h3 class="nameform">${name.split(' ')[0]}</h3>
-	            <h4 class="region">${name.split(' ')[1]}</h4>
+	            <h4 class="form">${name.split(' ')[1]}</h4>
 	            <small class="type"><span>${type1}</span></small>
 	        </div>
 	    `;
@@ -1417,3 +1421,17 @@ if (status == 'Capturado' || status == 'ShinyLock')
 }//finish function card
 
 fetchPokemons();
+
+
+
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
