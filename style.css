@@ -27,6 +27,7 @@ h1 {
 }
 
 .logo {
+	border-radius: 50px;
 	height: 517px;
 	width: 960px;
 }
