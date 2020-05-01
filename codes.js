@@ -2,24 +2,24 @@ const poke_container = document.getElementById('poke_container');
 const pokemons_number = 1015;
 
 const colores = {
-  Fuego: '#FF7F00',
-  Planta: '#a0ff70',
-  Eléctrico: '#ECCB1C',
-  Agua: '#B0E2FF',
-  Tierra: '#DEB887',
-  Hada: '#FFB0FF',
-  Veneno: '#c489b6',
-  Bicho: '#97c738',
-  Dragón: '#97b3e6',
-  Psíquico: '#FFB5C5',
-  Volador: '#F5F5F5',
-  Lucha: '#E65F5F',
-  Normal: '#DDCCAA',
-  Siniestro: '#7a7a7a',
-  Fantasma: '#857694',
-  Acero: '#CCCCCC',
-  Hielo: '#ADD8E6',
-  Roca: '#CD853F'
+  Fuego: '#ffaf80',
+  Planta: '#a4ffb3',
+  Eléctrico: '#fffb9a',
+  Agua: '#9fc5e8',
+  Tierra: '#e69138',
+  Hada: '#ffd7f3',
+  Veneno: '#ff93d3',
+  Bicho: '#cbff81',
+  Dragón: '#c793ff',
+  Psíquico: '#ffabe3',
+  Volador: '#c6e4ff',
+  Lucha: '#f2a1a1',
+  Normal: '#eeede5',
+  Siniestro: '#b2b2b2',
+  Fantasma: '#c385bd',
+  Acero: '#bbcdc4',
+  Hielo: '#a4fff4',
+  Roca: '#dcaa77'
 };
 
 //const main_types = Object.keys(colors);
