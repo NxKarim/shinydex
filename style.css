@@ -37,18 +37,6 @@ h1 {
 
 }
 
-.menu li{
-
-	list-style: none;
-	padding: 5px;
-	padding-right: 40px;
-	font: 14px;
-	font-weight: bold;
-	display: inline-block;
-	border-right: black;
-	border-right-style: solid;
-}
-
 
 .poke-container {
 	display: flex;
