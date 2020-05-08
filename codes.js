@@ -1118,7 +1118,7 @@ if (status == 'Capturado' || status == 'ShinyLock')
  	else if (nombre.includes('hembra'))
 	 {
 
- 	 	 if (nombre.includes('meowstic'))
+ 	 	 if (nombre.includes('meowstic') || nombre.includes('indeedee'))
 	 	{
 	 	pokemonEl.innerHTML = meowstic;
 	 	}
