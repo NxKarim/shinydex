@@ -29,7 +29,7 @@ const fetchPokemons = async () => {
 };
 
 const getPokemon = async () => {
-	const url = `https://spreadsheets.google.com/feeds/list/1DIuOZDigZ0cA6Lh9jzB4owluib09WcLN1E4kh9Do_HM/od6/public/values?alt=json`;
+	const url = `https://spreadsheets.google.com/feeds/list/1DIuOZDigZ0cA6Lh9jzB4owluib09WcLN1E4kh9Do_HM/od6/public/values?alt=json-in-script`;
 	const res = await fetch(url);
 	const pokemon = await res.json();
 	createPokemonCard(pokemon);
