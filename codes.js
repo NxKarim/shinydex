@@ -1,5 +1,5 @@
 const poke_container = document.getElementById('poke_container');
-const pokemons_number = 1111;
+const pokemons_number = 1405;
 
 const colores = {
   Fuego: '#ffaf80',
@@ -29,7 +29,7 @@ const fetchPokemons = async () => {
 };
 
 const getPokemon = async () => {
-	const url = `https://spreadsheets.google.com/feeds/list/1eHZ-UhSIsV45AXkrrZucAPnYpSy4QD05KzvHuSna0QE/od6/public/values?alt=json`;
+	const url = `https://spreadsheets.google.com/feeds/list/1DIuOZDigZ0cA6Lh9jzB4owluib09WcLN1E4kh9Do_HM/od6/public/values?alt=json`;
 	const res = await fetch(url);
 	const pokemon = await res.json();
 	createPokemonCard(pokemon);
